@@ -1,0 +1,289 @@
+[class^="ri-"]::before {
+    content: "\f3c2";
+  }
+  
+      body {
+          font-family: 'Inter', sans-serif;
+          background-color: #0A0A0A;
+          color: #FFFFFF;
+          scroll-behavior: smooth;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+          font-family: 'Poppins', sans-serif;
+      }
+
+      .glow {
+          text-shadow: 0 0 10px rgba(110, 86, 207, 0.5), 0 0 20px rgba(110, 86, 207, 0.3);
+      }
+
+      .card-glow {
+          box-shadow: 0 0 15px rgba(110, 86, 207, 0.3);
+      }
+
+      .card-glow:hover {
+          box-shadow: 0 0 25px rgba(110, 86, 207, 0.5);
+      }
+
+      .gradient-bg {
+          background: linear-gradient(135deg, #0A0A0A, #1A1A1A);
+      }
+
+      .particles {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          z-index: 0;
+      }
+
+      .particle {
+          position: absolute;
+          border-radius: 50%;
+          background: rgba(110, 86, 207, 0.5);
+          pointer-events: none;
+          z-index: 0;
+      }
+
+      .video-bg {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          opacity: 0.3;
+          z-index: 0;
+      }
+
+      .overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(to bottom, rgba(10, 10, 10, 0.7), rgba(10, 10, 10, 0.9));
+          z-index: 1;
+      }
+
+      .scroll-indicator {
+          animation: bounce 2s infinite;
+      }
+
+      @keyframes bounce {
+          0%, 20%, 50%, 80%, 100% {
+              transform: translateY(0);
+          }
+          40% {
+              transform: translateY(-20px);
+          }
+          60% {
+              transform: translateY(-10px);
+          }
+      }
+
+      .animate-text {
+          display: inline-block;
+          opacity: 0;
+          transform: translateY(20px);
+          animation: fadeInUp 0.5s forwards;
+      }
+
+      @keyframes fadeInUp {
+          to {
+              opacity: 1;
+              transform: translateY(0);
+          }
+      }
+
+      .animate-delay-1 { animation-delay: 0.1s; }
+      .animate-delay-2 { animation-delay: 0.3s; }
+      .animate-delay-3 { animation-delay: 0.5s; }
+      .animate-delay-4 { animation-delay: 0.7s; }
+
+      .progress-bar {
+          height: 6px;
+          background: rgba(110, 86, 207, 0.2);
+          border-radius: 3px;
+          overflow: hidden;
+      }
+
+      .progress-fill {
+          height: 100%;
+          background: #6E56CF;
+          border-radius: 3px;
+          transition: width 1s ease-in-out;
+      }
+
+      .floating {
+          animation: float 3s ease-in-out infinite;
+      }
+
+      @keyframes float {
+          0% { transform: translateY(0px); }
+          50% { transform: translateY(-10px); }
+          100% { transform: translateY(0px); }
+      }
+
+      .gradient-text {
+          background: linear-gradient(90deg, #6E56CF, #9B8AFB);
+          -webkit-background-clip: text;
+          background-clip: text;
+          color: transparent;
+      }
+
+      .animated-border::after {
+          content: '';
+          position: absolute;
+          bottom: -5px;
+          left: 0;
+          width: 0;
+          height: 3px;
+          background: #6E56CF;
+          transition: width 0.5s ease;
+      }
+
+      .animated-border:hover::after {
+          width: 100%;
+      }
+
+      input:focus + label, textarea:focus + label, input:not(:placeholder-shown) + label, textarea:not(:placeholder-shown) + label {
+          transform: translateY(-20px) scale(0.8);
+          color: #6E56CF;
+      }
+
+      input:focus, textarea:focus {
+          border-color: #6E56CF;
+          box-shadow: 0 0 10px rgba(110, 86, 207, 0.3);
+      }
+
+      .form-group {
+          position: relative;
+          margin-bottom: 1.5rem;
+      }
+
+      .form-label {
+          position: absolute;
+          left: 1rem;
+          top: 1rem;
+          transition: all 0.3s ease;
+          pointer-events: none;
+          color: #9CA3AF;
+      }
+
+      .social-icon {
+          transition: all 0.3s ease;
+      }
+
+      .social-icon:hover {
+          transform: translateY(-5px);
+          color: #6E56CF;
+      }
+
+      .project-card {
+          transition: all 0.3s ease;
+          overflow: hidden;
+      }
+
+      .project-card:hover {
+          transform: translateY(-10px);
+      }
+
+      .project-card:hover .project-image {
+          transform: scale(1.05);
+      }
+
+      .project-image {
+          transition: transform 0.5s ease;
+      }
+
+      .skill-tag {
+          animation: pulse 2s infinite;
+          animation-delay: calc(var(--delay) * 0.2s);
+      }
+
+      @keyframes pulse {
+          0% { opacity: 0.7; }
+          50% { opacity: 1; }
+          100% { opacity: 0.7; }
+      }
+
+      .section {
+          opacity: 0;
+          transform: translateY(30px);
+          transition: all 0.8s ease;
+      }
+
+      .section.visible {
+          opacity: 1;
+          transform: translateY(0);
+      }
+
+      .btn-glow {
+          position: relative;
+          z-index: 1;
+          overflow: hidden;
+      }
+
+      .btn-glow::before {
+          content: '';
+          position: absolute;
+          top: -2px;
+          left: -2px;
+          right: -2px;
+          bottom: -2px;
+          background: linear-gradient(45deg, #6E56CF, #9B8AFB, #6E56CF);
+          z-index: -1;
+          animation: glowing 1.5s linear infinite;
+          filter: blur(8px);
+          opacity: 0;
+          transition: opacity 0.3s ease;
+      }
+
+      .btn-glow:hover::before {
+          opacity: 1;
+      }
+
+      @keyframes glowing {
+          0% { background-position: 0 0; }
+          50% { background-position: 400% 0; }
+          100% { background-position: 0 0; }
+      }
+
+      .gradient-border {
+          position: relative;
+          border: 2px solid transparent;
+          background-clip: padding-box;
+      }
+
+      .gradient-border::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          margin: -2px;
+          border-radius: inherit;
+          background: linear-gradient(45deg, #6E56CF, #9B8AFB);
+          z-index: -1;
+      }
+
+      ::-webkit-scrollbar {
+          width: 8px;
+      }
+
+      ::-webkit-scrollbar-track {
+          background: #1A1A1A;
+      }
+
+      ::-webkit-scrollbar-thumb {
+          background: #6E56CF;
+          border-radius: 4px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+          background: #9B8AFB;
+      }

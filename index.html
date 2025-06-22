@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
+
+</head>
+<body>
+    <nav
+      class="fixed top-0 left-0 w-full bg-opacity-70 backdrop-blur-md bg-[#0A0A0A] z-50 transition-all duration-300"
+    >
+      <div class="container mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+          <a href="#" class="text-2xl font-['Pacifico'] text-white">Faraz</a>
+          <div class="hidden md:flex space-x-8">
+            <a
+              href="#home"
+              class="text-white hover:text-primary transition-colors duration-300 relative animated-border"
+              >Home</a
+            >
+            <a
+              href="#expertise"
+              class="text-white hover:text-primary transition-colors duration-300 relative animated-border"
+              >Expertise</a
+            >
+            <a
+              href="#projects"
+              class="text-white hover:text-primary transition-colors duration-300 relative animated-border"
+              >Projects</a
+            >
+            <a
+              href="#about"
+              class="text-white hover:text-primary transition-colors duration-300 relative animated-border"
+              >About</a
+            >
+            <a
+              href="#contact"
+              class="text-white hover:text-primary transition-colors duration-300 relative animated-border"
+              >Contact</a
+            >
+          </div>
+          <button
+            class="md:hidden w-10 h-10 flex items-center justify-center text-white"
+            id="mobile-menu-button"
+          >
+            <i class="ri-menu-line ri-lg"></i>
+          </button>
+        </div>
+      </div>
+      <div
+        class="md:hidden hidden bg-[#121212] w-full absolute top-full left-0 py-4 px-6"
+        id="mobile-menu"
+      >
+        <div class="flex flex-col space-y-4">
+          <a
+            href="#home"
+            class="text-white hover:text-primary transition-colors duration-300"
+            >Home</a
+          >
+          <a
+            href="#expertise"
+            class="text-white hover:text-primary transition-colors duration-300"
+            >Expertise</a
+          >
+          <a
+            href="#projects"
+            class="text-white hover:text-primary transition-colors duration-300"
+            >Projects</a
+          >
+          <a
+            href="#about"
+            class="text-white hover:text-primary transition-colors duration-300"
+            >About</a
+          >
+          <a
+            href="#contact"
+            class="text-white hover:text-primary transition-colors duration-300"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="relative min-h-screen flex items-center justify-center overflow-hidden"
+    >
+      <div class="video-bg">
+        <video autoplay muted loop loading="lazy" poster="images/video-fallback.jpg">
+          <source
+            src="https://readdy.ai/api/search-image?query=abstract%2520digital%2520technology%2520background%2520with%2520flowing%2520particles%2520and%2520code%2520elements%2520in%2520dark%2520blue%2520and%2520purple%2520colors%2520perfect%2520for%2520tech%2520website%2520background%2520high%2520quality%2520cinematic%2520smooth%2520motion&width=1920&height=1080&seq=video1&orientation=landscape"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <div class="overlay"></div>
+      <div class="particles" id="particles"></div>
+      <div class="container mx-auto px-6 z-10 text-center">
+        <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-4">
+          <span class="animate-text animate-delay-1 block"
+            >Hi, I'm Muhammad Faraz</span
+          >
+        </h1>
+        <div
+          class="h-1 w-24 bg-primary mx-auto mb-6 animate-text animate-delay-2"
+        ></div>
+        <h2
+          class="text-xl md:text-2xl lg:text-3xl mb-8 text-gray-300 animate-text animate-delay-3"
+        >
+          <span class="gradient-text">Front-End Developer</span> | Vue.js,
+          Nuxt.js, Bootstrap
+        </h2>
+        <div class="animate-text animate-delay-4">
+          <a
+            href="#contact"
+            class="inline-block bg-primary hover:bg-opacity-90 text-white font-semibold py-3 px-8 rounded-button transition-all duration-300 btn-glow whitespace-nowrap"
+            >Get in Touch</a
+          >
+        </div>
+        <div
+          class="absolute bottom-10 left-1/2 transform -translate-x-1/2 scroll-indicator"
+        >
+          <a
+            href="#expertise"
+            class="text-white opacity-70 hover:opacity-100 transition-opacity duration-300"
+          >
+            <div class="w-8 h-8 flex items-center justify-center">
+              <i class="ri-arrow-down-line ri-lg"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="py-20 relative section">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4 relative inline-block">
+            My Expertise
+            <div class="h-1 w-full bg-primary mt-2"></div>
+          </h2>
+          <p class="text-gray-400 max-w-2xl mx-auto">
+            Specialized in creating responsive, user-friendly interfaces with
+            modern frameworks and tools.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Skill Card 1 -->
+          <div
+            class="bg-[#121212] rounded-lg p-6 card-glow transition-all duration-300 hover:-translate-y-2"
+          >
+            <div
+              class="w-16 h-16 flex items-center justify-center mb-6 mx-auto bg-[#1A1A1A] rounded-full text-primary"
+            >
+              <i class="ri-html5-line ri-2x"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-4 text-center">HTML & CSS</h3>
+            <div class="progress-bar mb-3">
+              <div class="progress-fill" style="width: 95%"></div>
+            </div>
+            <p class="text-gray-400 text-center">
+              Creating semantic, accessible and well-structured markup with
+              modern CSS techniques.
+            </p>
+          </div>
+
+          <!-- Skill Card 2 -->
+          <div
+            class="bg-[#121212] rounded-lg p-6 card-glow transition-all duration-300 hover:-translate-y-2"
+          >
+            <div
+              class="w-16 h-16 flex items-center justify-center mb-6 mx-auto bg-[#1A1A1A] rounded-full text-primary"
+            >
+              <i class="ri-javascript-line ri-2x"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-4 text-center">JavaScript</h3>
+            <div class="progress-bar mb-3">
+              <div class="progress-fill" style="width: 90%"></div>
+            </div>
+            <p class="text-gray-400 text-center">
+              Building interactive experiences with modern ES6+ features and
+              best practices.
+            </p>
+          </div>
+
+          <!-- Skill Card 3 -->
+          <div
+            class="bg-[#121212] rounded-lg p-6 card-glow transition-all duration-300 hover:-translate-y-2"
+          >
+            <div
+              class="w-16 h-16 flex items-center justify-center mb-6 mx-auto bg-[#1A1A1A] rounded-full text-primary"
+            >
+              <i class="ri-vuejs-line ri-2x"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-4 text-center">
+              Vue.js & Nuxt.js
+            </h3>
+            <div class="progress-bar mb-3">
+              <div class="progress-fill" style="width: 85%"></div>
+            </div>
+            <p class="text-gray-400 text-center">
+              Developing scalable applications with Vue ecosystem and
+              server-side rendering.
+            </p>
+          </div>
+
+          <!-- Skill Card 4 -->
+          <div
+            class="bg-[#121212] rounded-lg p-6 card-glow transition-all duration-300 hover:-translate-y-2"
+          >
+            <div
+              class="w-16 h-16 flex items-center justify-center mb-6 mx-auto bg-[#1A1A1A] rounded-full text-primary"
+            >
+              <i class="ri-bootstrap-line ri-2x"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-4 text-center">
+              Bootstrap & Tailwind
+            </h3>
+            <div class="progress-bar mb-3">
+              <div class="progress-fill" style="width: 92%"></div>
+            </div>
+            <p class="text-gray-400 text-center">
+              Crafting responsive layouts with popular CSS frameworks for rapid
+              development.
+            </p>
+          </div>
+
+          <!-- Skill Card 5 -->
+          <div
+            class="bg-[#121212] rounded-lg p-6 card-glow transition-all duration-300 hover:-translate-y-2"
+          >
+            <div
+              class="w-16 h-16 flex items-center justify-center mb-6 mx-auto bg-[#1A1A1A] rounded-full text-primary"
+            >
+              <i class="ri-layout-line ri-2x"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-4 text-center">
+              Responsive Design
+            </h3>
+            <div class="progress-bar mb-3">
+              <div class="progress-fill" style="width: 95%"></div>
+            </div>
+            <p class="text-gray-400 text-center">
+              Creating fluid layouts that work seamlessly across all devices and
+              screen sizes.
+            </p>
+          </div>
+
+          <!-- Skill Card 6 -->
+          <div
+            class="bg-[#121212] rounded-lg p-6 card-glow transition-all duration-300 hover:-translate-y-2"
+          >
+            <div
+              class="w-16 h-16 flex items-center justify-center mb-6 mx-auto bg-[#1A1A1A] rounded-full text-primary"
+            >
+              <i class="ri-code-box-line ri-2x"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-4 text-center">
+              Figma to Code
+            </h3>
+            <div class="progress-bar mb-3">
+              <div class="progress-fill" style="width: 88%"></div>
+            </div>
+            <p class="text-gray-400 text-center">
+              Transforming design mockups into pixel-perfect, functional web
+              interfaces.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 relative section">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4 relative inline-block">
+            Featured Projects
+            <div class="h-1 w-full bg-primary mt-2"></div>
+          </h2>
+          <p class="text-gray-400 max-w-2xl mx-auto">
+            A selection of my recent work showcasing my skills and experience in
+            front-end development.
+          </p>
+        </div>
+
+        <div class="flex justify-center mb-10">
+          <div class="inline-flex bg-[#121212] rounded-full p-1">
+            <button
+              class="project-filter-btn active px-4 py-2 rounded-full text-white bg-primary whitespace-nowrap"
+              data-filter="all"
+            >
+              All Projects
+            </button>
+            <button
+              class="project-filter-btn px-4 py-2 rounded-full text-gray-300 hover:text-white whitespace-nowrap"
+              data-filter="vue"
+            >
+              Vue.js
+            </button>
+            <button
+              class="project-filter-btn px-4 py-2 rounded-full text-gray-300 hover:text-white whitespace-nowrap"
+              data-filter="responsive"
+            >
+              Responsive
+            </button>
+            <button
+              class="project-filter-btn px-4 py-2 rounded-full text-gray-300 hover:text-white whitespace-nowrap"
+              data-filter="ui"
+            >
+              UI Design
+            </button>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Project Card 1 -->
+          <div
+            class="project-card bg-[#121212] rounded-lg overflow-hidden shadow-lg"
+            data-category="vue responsive"
+          >
+            <div class="relative overflow-hidden h-48">
+              <img
+                src="https://readdy.ai/api/search-image?query=modern%2520e-commerce%2520dashboard%2520interface%2520with%2520dark%2520theme%2520showing%2520analytics%2520charts%2520and%2520product%2520management%2520features%2520clean%2520design%2520with%2520purple%2520accents%2520professional%2520UI%2520design%2520high%2520quality%2520detailed%2520view&width=600&height=400&seq=proj1&orientation=landscape"
+                alt="E-commerce Dashboard"
+                class="w-full h-full object-cover project-image"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">E-commerce Dashboard</h3>
+              <p class="text-gray-400 mb-4">
+                A comprehensive admin dashboard for e-commerce platforms built
+                with Vue.js and Tailwind CSS.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span
+                  class="text-xs bg-[#1A1A1A] text-primary px-3 py-1 rounded-full"
+                  >Vue.js</span
+                >
+                <span
+                  class="text-xs bg-[#1A1A1A] text-primary px-3 py-1 rounded-full"
+                  >Tailwind</span
+                >
+                <span
+                  class="text-xs bg-[#1A1A1A] text-primary px-3 py-1 rounded-full"
+                  >Chart.js</span
+                >
+              </div>
+              <div class="flex space-x-3">
+                <a
+                  href="#"
+                  class="bg-[#1A1A1A] hover:bg-[#222222] text-white px-4 py-2 rounded-button transition-colors duration-300 whitespace-nowrap"
+                  >Live Demo</a
+                >
+                <a
+                  href="#"
+                  class="border border-primary text-primary hover:bg-primary hover:bg-opacity-10 px-4 py-2 rounded-button transition-colors duration-300 whitespace-nowrap"
+                  >View Code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 2 -->
+          <div
+            class="project-card bg-[#121212] rounded-lg overflow-hidden shadow-lg"
+            data-category="ui responsive"
+          >
+            <div class="relative overflow-hidden h-48">
+              <img
+                src="https://readdy.ai/api/search-image?query=modern%2520streaming%2520service%2520web%2520app%2520interface%2520with%2520dark%2520theme%2520showing%2520movie%2520thumbnails%2520and%2520categories%2520netflix-style%2520layout%2520with%2520purple%2520accent%2520colors%2520professional%2520UI%2520design%2520high%2520quality%2520detailed%2520view&width=600&height=400&seq=proj2&orientation=landscape"
+                alt="Streaming Platform UI"
+                class="w-full h-full object-cover project-image"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">Streaming Platform UI</h3>
+              <p class="text-gray-400 mb-4">
+                A Netflix-inspired streaming service interface with responsive
+                design and smooth animations.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span
+                  class="text-xs bg-[#1A1A1A] text-primary px-3 py-1 rounded-full"
+                  >HTML5</span
+                >
+                <span
+                  class="text-xs bg-[#1A1A1A] text-primary px-3 py-1 rounded-full"
+                  >SCSS</span
+                >
+                <span
+                  class="text-xs bg-[#1A1A1A] text-primary px-3 py-1 rounded-full"
+                  >JavaScript</span
+                >
+              </div>
+              <div class="flex space-x-3">
+                <a
+                  href="#"
+                  class="bg-[#1A1A1A] hover:bg-[#222222] text-white px-4 py-2 rounded-button transition-colors duration-300 whitespace-nowrap"
+                  >Live Demo</a
+                >
+                <a
+                  href="#"
+                  class="border border-primary text-primary hover:bg-primary hover:bg-opacity-10 px-4 py-2 rounded-button transition-colors duration-300 whitespace-nowrap"
+                  >View Code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 3 -->
+          <div
+            class="project-card bg-[#121212] rounded-lg overflow-hidden shadow-lg"
+            data-category="vue ui"
+          >
+            <div class="relative overflow-hidden h-48">
+              <img
+                src="https://readdy.ai/api/search-image?query=modern%2520task%2520management%2520application%2520interface%2520with%2520dark%2520theme%2520showing%2520kanban%2520board%2520with%2520tasks%2520and%2520categories%2520clean%2520design%2520with%2520purple%2520accents%2520professional%2520UI%2520design%2520high%2520quality%2520detailed%2520view&width=600&height=400&seq=proj3&orientation=landscape"
+                alt="Task Management App"
+                class="w-full h-full object-cover project-image"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">Task Management App</h3>
+              <p class="text-gray-400 mb-4">
+                A Kanban-style task management application built with Vue.js and
+                Vuex for state management.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span
+                  class="text-xs bg-[#1A1A1A] text-primary px-3 py-1 rounded-full"
+                  >Vue.js</span
+                >
+                <span
+                  class="text-xs bg-[#1A1A1A] text-primary px-3 py-1 rounded-full"
+                  >Vuex</span
+                >
+                <span
+                  class="text-xs bg-[#1A1A1A] text-primary px-3 py-1 rounded-full"
+                  >Firebase</span
+                >
+              </div>
+              <div class="flex space-x-3">
+                <a
+                  href="#"
+                  class="bg-[#1A1A1A] hover:bg-[#222222] text-white px-4 py-2 rounded-button transition-colors duration-300 whitespace-nowrap"
+                  >Live Demo</a
+                >
+                <a
+                  href="#"
+                  class="border border-primary text-primary hover:bg-primary hover:bg-opacity-10 px-4 py-2 rounded-button transition-colors duration-300 whitespace-nowrap"
+                  >View Code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 4 -->
+          <div
+            class="project-card bg-[#121212] rounded-lg overflow-hidden shadow-lg"
+            data-category="responsive ui"
+          >
+            <div class="relative overflow-hidden h-48">
+              <img
+                src="https://readdy.ai/api/search-image?query=modern%2520fitness%2520tracking%2520app%2520interface%2520with%2520dark%2520theme%2520showing%2520workout%2520statistics%2520and%2520progress%2520charts%2520clean%2520design%2520with%2520purple%2520accents%2520professional%2520UI%2520design%2520high%2520quality%2520detailed%2520view&width=600&height=400&seq=proj4&orientation=landscape"
+                alt="Fitness Tracker"
+                class="w-full h-full object-cover project-image"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">Fitness Tracker</h3>
+              <p class="text-gray-400 mb-4">
+                A mobile-first fitness tracking application with workout logging
+                and progress visualization.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span
+                  class="text-xs bg-[#1A1A1A] text-primary px-3 py-1 rounded-full"
+                  >HTML5</span
+                >
+                <span
+                  class="text-xs bg-[#1A1A1A] text-primary px-3 py-1 rounded-full"
+                  >Bootstrap</span
+                >
+                <span
+                  class="text-xs bg-[#1A1A1A] text-primary px-3 py-1 rounded-full"
+                  >JavaScript</span
+                >
+              </div>
+              <div class="flex space-x-3">
+                <a
+                  href="#"
+                  class="bg-[#1A1A1A] hover:bg-[#222222] text-white px-4 py-2 rounded-button transition-colors duration-300 whitespace-nowrap"
+                  >Live Demo</a
+                >
+                <a
+                  href="#"
+                  class="border border-primary text-primary hover:bg-primary hover:bg-opacity-10 px-4 py-2 rounded-button transition-colors duration-300 whitespace-nowrap"
+                  >View Code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 5 -->
+          <div
+            class="project-card bg-[#121212] rounded-lg overflow-hidden shadow-lg"
+            data-category="vue responsive"
+          >
+            <div class="relative overflow-hidden h-48">
+              <img
+                src="https://readdy.ai/api/search-image?query=modern%2520weather%2520application%2520interface%2520with%2520dark%2520theme%2520showing%2520weather%2520forecast%2520with%2520temperature%2520charts%2520and%2520city%2520search%2520clean%2520design%2520with%2520purple%2520accents%2520professional%2520UI%2520design%2520high%2520quality%2520detailed%2520view&width=600&height=400&seq=proj5&orientation=landscape"
+                alt="Weather App"
+                class="w-full h-full object-cover project-image"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">Weather App</h3>
+              <p class="text-gray-400 mb-4">
+                A weather forecast application with location search and 5-day
+                predictions using OpenWeather API.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span
+                  class="text-xs bg-[#1A1A1A] text-primary px-3 py-1 rounded-full"
+                  >Nuxt.js</span
+                >
+                <span
+                  class="text-xs bg-[#1A1A1A] text-primary px-3 py-1 rounded-full"
+                  >Axios</span
+                >
+                <span
+                  class="text-xs bg-[#1A1A1A] text-primary px-3 py-1 rounded-full"
+                  >Chart.js</span
+                >
+              </div>
+              <div class="flex space-x-3">
+                <a
+                  href="#"
+                  class="bg-[#1A1A1A] hover:bg-[#222222] text-white px-4 py-2 rounded-button transition-colors duration-300 whitespace-nowrap"
+                  >Live Demo</a
+                >
+                <a
+                  href="#"
+                  class="border border-primary text-primary hover:bg-primary hover:bg-opacity-10 px-4 py-2 rounded-button transition-colors duration-300 whitespace-nowrap"
+                  >View Code</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Me Section -->
+    <section id="about" class="py-20 relative section">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col lg:flex-row items-center gap-12">
+          <div class="lg:w-1/2 relative">
+            <div
+              class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary mx-auto lg:mx-0 gradient-border relative"
+            >
+              <img
+                src="images/faraz.jpg"
+                alt="faraz"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div
+              class="absolute -bottom-4 -right-4 w-20 h-20 bg-[#121212] rounded-full flex items-center justify-center card-glow z-10 floating"
+            >
+              <i class="ri-code-s-slash-line ri-2x text-primary"></i>
+            </div>
+          </div>
+          <div class="lg:w-1/2">
+            <h2
+              class="text-3xl md:text-4xl font-bold mb-6 relative inline-block"
+            >
+              About Me
+              <div class="h-1 w-full bg-primary mt-2"></div>
+            </h2>
+            <p class="text-gray-300 mb-6 leading-relaxed">
+              I'm a passionate Front-End Developer and Computer Science student
+              with a keen eye for creating engaging user experiences. With over
+              3 years of experience in web development, I specialize in building
+              responsive, interactive websites and applications.
+            </p>
+            <p class="text-gray-300 mb-8 leading-relaxed">
+              My journey in web development began during my sophomore year when
+              I discovered my passion for turning designs into functional
+              interfaces. I'm constantly exploring new technologies and
+              frameworks to enhance my skills and deliver cutting-edge
+              solutions.
+            </p>
+            <div class="flex flex-wrap gap-3 mb-8">
+              <span
+                class="skill-tag bg-[#1A1A1A] text-primary px-4 py-2 rounded-full text-sm"
+                style="--delay: 1"
+                >Problem Solver</span
+              >
+              <span
+                class="skill-tag bg-[#1A1A1A] text-primary px-4 py-2 rounded-full text-sm"
+                style="--delay: 2"
+                >Detail-Oriented</span
+              >
+              <span
+                class="skill-tag bg-[#1A1A1A] text-primary px-4 py-2 rounded-full text-sm"
+                style="--delay: 3"
+                >Fast Learner</span
+              >
+              <span
+                class="skill-tag bg-[#1A1A1A] text-primary px-4 py-2 rounded-full text-sm"
+                style="--delay: 4"
+                >Team Player</span
+              >
+              <span
+                class="skill-tag bg-[#1A1A1A] text-primary px-4 py-2 rounded-full text-sm"
+                style="--delay: 5"
+                >Creative Thinker</span
+              >
+            </div>
+            <a
+              href="#contact"
+              class="inline-block bg-primary hover:bg-opacity-90 text-white font-semibold py-3 px-8 rounded-button transition-all duration-300 btn-glow whitespace-nowrap"
+              >Contact Me</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 relative section">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4 relative inline-block">
+            Get In Touch
+            <div class="h-1 w-full bg-primary mt-2"></div>
+          </h2>
+          <p class="text-gray-400 max-w-2xl mx-auto">
+            Have a project in mind or want to discuss potential opportunities?
+            Feel free to reach out!
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div class="bg-[#121212] rounded-lg p-8 card-glow">
+            <h3 class="text-2xl font-semibold mb-6">Send Me a Message</h3>
+            <form id="contact-form">
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="name"
+                  class="w-full bg-[#1A1A1A] text-white p-4 rounded border-none focus:outline-none"
+                  placeholder=" "
+                  required
+                />
+                <label for="name" class="form-label">Your Name</label>
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  class="w-full bg-[#1A1A1A] text-white p-4 rounded border-none focus:outline-none"
+                  placeholder=" "
+                  required
+                />
+                <label for="email" class="form-label">Your Email</label>
+              </div>
+              <div class="form-group">
+                <textarea
+                  id="message"
+                  class="w-full bg-[#1A1A1A] text-white p-4 rounded border-none focus:outline-none resize-none h-40"
+                  placeholder=" "
+                  required
+                ></textarea>
+                <label for="message" class="form-label">Your Message</label>
+              </div>
+              <button
+                type="submit"
+                class="w-full bg-primary hover:bg-opacity-90 text-white font-semibold py-4 px-8 rounded-button transition-all duration-300 btn-glow mt-4 whitespace-nowrap"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+
+          <div class="flex flex-col justify-between">
+            <div>
+              <h3 class="text-2xl font-semibold mb-6">Contact Information</h3>
+              <div class="space-y-6">
+                <div class="flex items-start space-x-4">
+                  <div
+                    class="w-12 h-12 flex items-center justify-center bg-[#1A1A1A] rounded-full text-primary"
+                  >
+                    <i class="ri-mail-line ri-lg"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-medium mb-1">Email</h4>
+                    <p class="text-gray-400">john.anderson@example.com</p>
+                  </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                  <div
+                    class="w-12 h-12 flex items-center justify-center bg-[#1A1A1A] rounded-full text-primary"
+                  >
+                    <i class="ri-map-pin-line ri-lg"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-medium mb-1">Location</h4>
+                    <p class="text-gray-400">San Francisco, California</p>
+                  </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                  <div
+                    class="w-12 h-12 flex items-center justify-center bg-[#1A1A1A] rounded-full text-primary"
+                  >
+                    <i class="ri-time-line ri-lg"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-medium mb-1">Working Hours</h4>
+                    <p class="text-gray-400">Monday - Friday: 9AM - 6PM</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-12">
+              <h3 class="text-2xl font-semibold mb-6">Connect With Me</h3>
+              <div class="flex space-x-4">
+                <a
+                  href="#"
+                  class="social-icon w-12 h-12 flex items-center justify-center bg-[#1A1A1A] rounded-full text-white hover:text-primary"
+                >
+                  <i class="ri-github-fill ri-lg"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-icon w-12 h-12 flex items-center justify-center bg-[#1A1A1A] rounded-full text-white hover:text-primary"
+                >
+                  <i class="ri-linkedin-fill ri-lg"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-icon w-12 h-12 flex items-center justify-center bg-[#1A1A1A] rounded-full text-white hover:text-primary"
+                >
+                  <i class="ri-twitter-fill ri-lg"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-icon w-12 h-12 flex items-center justify-center bg-[#1A1A1A] rounded-full text-white hover:text-primary"
+                >
+                  <i class="ri-dribbble-fill ri-lg"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-[#0A0A0A] border-t border-[#1A1A1A]">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <p class="text-gray-400 mb-4 md:mb-0">
+            © 2025 John Anderson. All rights reserved.
+          </p>
+          <div class="flex space-x-6">
+            <a
+              href="#home"
+              class="text-gray-400 hover:text-primary transition-colors duration-300"
+              >Home</a
+            >
+            <a
+              href="#expertise"
+              class="text-gray-400 hover:text-primary transition-colors duration-300"
+              >Expertise</a
+            >
+            <a
+              href="#projects"
+              class="text-gray-400 hover:text-primary transition-colors duration-300"
+              >Projects</a
+            >
+            <a
+              href="#about"
+              class="text-gray-400 hover:text-primary transition-colors duration-300"
+              >About</a
+            >
+            <a
+              href="#contact"
+              class="text-gray-400 hover:text-primary transition-colors duration-300"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: "#6E56CF", secondary: "#9B8AFB" },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <script src="javascript/script.js"></script>
+    <!-- Navigation Script -->
+    <script id="navigation-script">
+        document.addEventListener("DOMContentLoaded", function () {
+          const mobileMenuButton = document.getElementById("mobile-menu-button");
+          const mobileMenu = document.getElementById("mobile-menu");
+          const navLinks = document.querySelectorAll("#mobile-menu a");
+  
+          mobileMenuButton.addEventListener("click", function () {
+            mobileMenu.classList.toggle("hidden");
+          });
+  
+          navLinks.forEach((link) => {
+            link.addEventListener("click", function () {
+              mobileMenu.classList.add("hidden");
+            });
+          });
+  
+          // Sticky navigation
+          const nav = document.querySelector("nav");
+          window.addEventListener("scroll", function () {
+            if (window.scrollY > 100) {
+              nav.classList.add("bg-opacity-90");
+              nav.classList.add("shadow-md");
+            } else {
+              nav.classList.remove("bg-opacity-90");
+              nav.classList.remove("shadow-md");
+            }
+          });
+        });
+      </script>
+  
+      <!-- Particles Script -->
+      <script id="particles-script">
+        document.addEventListener("DOMContentLoaded", function () {
+          const particlesContainer = document.getElementById("particles");
+  
+          function createParticle() {
+            const particle = document.createElement("div");
+            particle.classList.add("particle");
+  
+            // Random size between 2-6px
+            const size = Math.random() * 4 + 2;
+            particle.style.width = `${size}px`;
+            particle.style.height = `${size}px`;
+  
+            // Random position
+            const posX = Math.random() * 100;
+            const posY = Math.random() * 100;
+            particle.style.left = `${posX}%`;
+            particle.style.top = `${posY}%`;
+  
+            // Random opacity
+            particle.style.opacity = Math.random() * 0.5 + 0.1;
+  
+            // Animation
+            const duration = Math.random() * 20 + 10;
+            particle.style.animation = `float ${duration}s linear infinite`;
+  
+            particlesContainer.appendChild(particle);
+  
+            // Remove particle after some time
+            setTimeout(() => {
+              particle.remove();
+            }, duration * 1000);
+          }
+  
+          // Create initial particles
+          for (let i = 0; i < 50; i++) {
+            createParticle();
+          }
+  
+          // Create new particles periodically
+          setInterval(createParticle, 1000);
+        });
+      </script>
+      <!-- Scroll Animation Script -->
+      <script id="scroll-animation-script">
+        document.addEventListener("DOMContentLoaded", function () {
+          const sections = document.querySelectorAll(".section");
+  
+          function checkScroll() {
+            const triggerBottom = window.innerHeight * 0.8;
+  
+            sections.forEach((section) => {
+              const sectionTop = section.getBoundingClientRect().top;
+  
+              if (sectionTop < triggerBottom) {
+                section.classList.add("visible");
+              }
+            });
+          }
+  
+          // Check on initial load
+          checkScroll();
+  
+          // Check on scroll
+          window.addEventListener("scroll", checkScroll);
+        });
+      </script>
+      <!-- Project Filter Script -->
+      <script id="project-filter-script">
+        document.addEventListener("DOMContentLoaded", function () {
+          const filterButtons = document.querySelectorAll(".project-filter-btn");
+          const projectCards = document.querySelectorAll(".project-card");
+  
+          filterButtons.forEach((button) => {
+            button.addEventListener("click", function () {
+              // Remove active class from all buttons
+              filterButtons.forEach((btn) => {
+                btn.classList.remove("active", "bg-primary");
+                btn.classList.add("text-gray-300");
+              });
+  
+              // Add active class to clicked button
+              this.classList.add("active", "bg-primary");
+              this.classList.remove("text-gray-300");
+              this.classList.add("text-white");
+  
+              const filter = this.getAttribute("data-filter");
+  
+              projectCards.forEach((card) => {
+                if (filter === "all") {
+                  card.style.display = "block";
+                  setTimeout(() => {
+                    card.style.opacity = "1";
+                    card.style.transform = "translateY(0)";
+                  }, 100);
+                } else {
+                  if (card.getAttribute("data-category").includes(filter)) {
+                    card.style.display = "block";
+                    setTimeout(() => {
+                      card.style.opacity = "1";
+                      card.style.transform = "translateY(0)";
+                    }, 100);
+                  } else {
+                    card.style.opacity = "0";
+                    card.style.transform = "translateY(20px)";
+                    setTimeout(() => {
+                      card.style.display = "none";
+                    }, 300);
+                  }
+                }
+              });
+            });
+          });
+        });
+      </script>
+      <!-- Form Handling Script -->
+      <script id="form-script">
+        document.addEventListener("DOMContentLoaded", function () {
+          const contactForm = document.getElementById("contact-form");
+  
+          contactForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+  
+            const nameInput = document.getElementById("name");
+            const emailInput = document.getElementById("email");
+            const messageInput = document.getElementById("message");
+  
+            // Simple validation
+            let isValid = true;
+  
+            if (nameInput.value.trim() === "") {
+              highlightError(nameInput);
+              isValid = false;
+            } else {
+              removeError(nameInput);
+            }
+  
+            if (emailInput.value.trim() === "" || !isValidEmail(emailInput.value)) {
+              highlightError(emailInput);
+              isValid = false;
+            } else {
+              removeError(emailInput);
+            }
+  
+            if (messageInput.value.trim() === "") {
+              highlightError(messageInput);
+              isValid = false;
+            } else {
+              removeError(messageInput);
+            }
+  
+            if (isValid) {
+              // Simulate form submission
+              const submitButton = contactForm.querySelector('button[type="submit"]');
+              submitButton.innerHTML =
+                '<i class="ri-loader-4-line ri-spin"></i> Sending...';
+              submitButton.disabled = true;
+  
+              setTimeout(() => {
+                contactForm.innerHTML = `
+                                    <div class="text-center py-8">
+                                        <div class="w-16 h-16 bg-primary bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                            <i class="ri-check-line ri-2x text-primary"></i>
+                                        </div>
+                                        <h3 class="text-xl font-semibold mb-2">Message Sent Successfully!</h3>
+                                        <p class="text-gray-400">Thank you for reaching out. I'll get back to you as soon as possible.</p>
+                                    </div>
+                                `;
+              }, 1500);
+            }
+          });
+  
+          function highlightError(input) {
+            input.classList.add("border", "border-red-500");
+            input.classList.add("bg-red-500", "bg-opacity-10");
+          }
+  
+          function removeError(input) {
+            input.classList.remove("border", "border-red-500");
+            input.classList.remove("bg-red-500", "bg-opacity-10");
+          }
+  
+          function isValidEmail(email) {
+            const re =
+              /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(String(email).toLowerCase());
+          }
+        });
+      </script>
+  
+      <!-- Smooth Scroll Script -->
+      <script id="smooth-scroll-script">
+        document.addEventListener("DOMContentLoaded", function () {
+          const links = document.querySelectorAll('a[href^="#"]');
+  
+          links.forEach((link) => {
+            link.addEventListener("click", function (e) {
+              e.preventDefault();
+  
+              const targetId = this.getAttribute("href");
+              const targetElement = document.querySelector(targetId);
+  
+              if (targetElement) {
+                window.scrollTo({
+                  top: targetElement.offsetTop - 80,
+                  behavior: "smooth",
+                });
+              }
+            });
+          });
+        });
+      </script>
+  
+
+</body>
+</html>
